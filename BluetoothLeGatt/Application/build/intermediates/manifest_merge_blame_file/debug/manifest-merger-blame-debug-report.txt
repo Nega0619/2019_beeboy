@@ -1,0 +1,101 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright 2013 The Android Open Source Project
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9     http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.bluetoothlegatt"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="18"
+23-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="28" />
+24-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml
+25
+26    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+27
+28
+29    <!--
+30    Declare this required feature if you want to make the app available to BLE-capable
+31    devices only.  If you want to make your app available to devices that don't support BLE,
+32    you should omit this in the manifest.  Instead, determine BLE capability by using
+33    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+34    -->
+35    <uses-feature
+35-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:5-89
+36        android:name="android.hardware.bluetooth_le"
+36-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:19-63
+37        android:required="true" />
+37-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:31:64-87
+38
+39    <uses-permission android:name="android.permission.BLUETOOTH" />
+39-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:5-67
+39-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:22-65
+40    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+40-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:5-73
+40-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:22-71
+41    <!--
+42     If your app targets Android 9 or lower, you can declare
+43     ACCESS_COARSE_LOCATION instead.
+44    -->
+45    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+45-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:37:5-79
+45-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:37:22-76
+46    <uses-permission android:name="android.permission.VIBRATE" />
+46-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:5-65
+46-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:22-63
+47
+48    <application
+48-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:5-52:19
+49        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+49-->[com.android.support:support-compat:28.0.0] C:\Users\Joo\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+50        android:debuggable="true"
+51        android:icon="@drawable/ic_launcher"
+51-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:9-45
+52        android:label="@string/app_name"
+52-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:18-50
+53        android:theme="@android:style/Theme.Holo.Light" >
+53-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:42:9-56
+54        <activity
+54-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:43:9-49:20
+55            android:name="com.example.android.bluetoothlegatt.DeviceScanActivity"
+55-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:43:19-53
+56            android:label="@string/app_name" >
+56-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:13-45
+57            <intent-filter>
+57-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:13-48:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:46:17-68
+58-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:46:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:47:17-76
+60-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:47:27-74
+61            </intent-filter>
+62        </activity>
+63        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" />
+63-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:50:9-58
+63-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:50:19-56
+64
+65        <service
+65-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:51:9-77
+66            android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
+66-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:51:18-52
+67            android:enabled="true" />
+67-->C:\Users\Joo\StudioProjects\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:51:53-75
+68    </application>
+69
+70</manifest>
