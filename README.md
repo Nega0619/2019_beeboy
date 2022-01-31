@@ -59,9 +59,9 @@ Beeboy 로봇은 3D 프린터로 외곽부분을 출력할 수 있도록 설계�
 
 다음은 모델링한 결과입니다.
 
-![image-20220131162049680](https://github.com/Nega0619/Typora-Images/blob/main/image-20211027152251463.png)
+![image-20220131162049680](https://github.com/Nega0619/2019_beeboy/blob/main/images/image-20220131162049680.png)
 
-![image-20220131162107075](D:\Github\tistoryPostings\Typora Images\image-20220131162107075.png)
+![image-20220131162107075](https://github.com/Nega0619/2019_beeboy/blob/main/images/image-20220131162107075.png)
 
 위와 같이 설계한 stl 파일을 gsd 파일로 변환해주고 3D 프린터에서 출력을 해주었습니다. 
 
